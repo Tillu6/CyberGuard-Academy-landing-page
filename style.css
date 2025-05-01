@@ -1,0 +1,207 @@
+/* Reset & base */
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #333; /* Slightly darker for better readability */
+    background-color: #f8f9fa; /* Even lighter background */
+    overflow-x: hidden;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Background image is set inline in HTML for now */
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 80, 150, 0.4), rgba(0, 80, 150, 0.8)); /* A more tech-focused blue gradient */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 850px;
+    padding: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+}
+
+.subhead {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    color: #eee; /* Slightly lighter subhead */
+}
+
+.benefit {
+    font-size: 1.15rem;
+    margin-bottom: 2.5rem;
+    color: #ddd; /* Lighter benefit text */
+}
+
+.btn {
+    background: linear-gradient(135deg, #ff9800, #f57c00); /* Brighter orange gradient */
+    color: #fff;
+    padding: 1.1rem 2.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    letter-spacing: 0.02em;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.benefits h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2c3e50; /* Darker heading */
+}
+
+.benefits .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly wider benefit cards */
+    gap: 2.5rem;
+    padding: 3rem 0;
+}
+
+.benefits .card {
+    background: #e6ffe6; /* Light neon green */
+    padding: 2.5rem;
+    border-radius: 15px; /* More pronounced rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06); /* Softer, larger shadow */
+    transition: transform 0.2s ease-in-out;
+}
+
+.benefits .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Slightly stronger hover shadow */
+}
+
+.benefits .card i { /* Icons from Font Awesome */
+    font-size: 2.5rem;
+    color: #00cc00; /* Darker neon green for icon */
+    margin-bottom: 1.2rem;
+}
+
+.benefits .card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+    color: #006600; /* Darker text for contrast */
+}
+
+.benefits .card p {
+    color: #336633; /* Darker paragraph text */
+}
+
+/* CTA Section */
+.cta-section {
+    background: #e0f7fa; /* Light cyan background for contrast */
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #00838f; /* Darker cyan */
+}
+
+.cta-section .btn {
+    background: linear-gradient(135deg, #00bcd4, #00838f); /* Cyan gradient for CTA button */
+    color: #fff;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 131, 143, 0.3);
+}
+
+.cta-section .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 131, 143, 0.35);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 0.95rem;
+    color: #ddd;
+    background-color: #34495e; /* Darker, professional footer */
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+    color: #00838f;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 5rem 2rem;
+    }
+    .hero-content {
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+    .subhead {
+        font-size: 1.4rem;
+    }
+    .benefits .grid {
+        grid-template-columns: 1fr;
+    }
+    .benefits .card {
+        padding: 2rem;
+    }
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+}
