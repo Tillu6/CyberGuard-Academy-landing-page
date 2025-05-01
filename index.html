@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CyberAware: Your AI-Powered Human Firewall</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="CyberGuard Academy: AI-powered cybersecurity training with adaptive microlearning, real-time threat simulations, and gamification."/>
+  <title>CyberGuard Academy | AI-Powered Human Firewall</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -12,111 +22,115 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <style>
-    /* Inline styles for hero — consider moving into style.css */
-    .hero-bg {
-      background-image: url('hero.png');
-      background-size: cover;
-      background-position: center;
-    }
-    /* Testimonials styling */
-    #testimonials {
-      padding: 4rem 1rem;
-      background: #f9f9f9;
-      text-align: center;
-    }
-    #testimonials h2 {
-      margin-bottom: 2rem;
-      font-size: 2rem;
-      color: #333;
-    }
-    #testimonials blockquote {
-      font-style: italic;
-      margin: 0 auto 1.5rem;
-      max-width: 600px;
-      color: #555;
-      position: relative;
-      padding: 1rem 1.5rem;
-    }
-    #testimonials blockquote:before {
-      content: "“";
-      font-size: 4rem;
-      position: absolute;
-      top: -10px;
-      left: 10px;
-      color: #00aaff;
-    }
-    #testimonials footer {
-      margin-top: 0.5rem;
-      font-weight: bold;
-      color: #222;
-    }
-  </style>
 </head>
 <body>
+  <!-- Skip link for screen readers -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="hero">
-    <div class="hero-bg">
+  <!-- Sticky Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#" class="logo">CyberGuard</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#trial">Get Started</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <header id="hero" class="hero" role="img" aria-label="Office scene with glowing neural shield and threat alerts">
+      <div class="hero-bg"></div>
       <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>CyberGuard Academy</h1>
+        <p class="subhead">
+          Adaptive microlearning for busy knowledge-workers—stop phishing attacks before they hit your inbox.
+        </p>
+        <p class="benefit">
+          AI-driven nano-courses and real-time nudges cut phishing clicks by over 60%, integrating seamlessly with MS 365 & Google Workspace.
+        </p>
+        <a href="#trial" class="btn cta-btn">Start Free 14-Day Trial</a>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Show Them the Benefits</h2>
+      <div class="grid">
+        <div class="card">
+          <i class="fas fa-brain" aria-hidden="true"></i>
+          <h3>Adaptive Learning</h3>
+          <p>Laser-focused nano-courses that evolve with your behavior.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-shield-alt" aria-hidden="true"></i>
+          <h3>Real-Time Nudges</h3>
+          <p>Instant alerts the moment a threat is detected.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-trophy" aria-hidden="true"></i>
+          <h3>Gamification</h3>
+          <p>Earn XP, unlock badges, and climb the leaderboards.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-rocket" aria-hidden="true"></i>
+          <h3>Quick Integration</h3>
+          <p>Get up and running in under 10 minutes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading">What Our CyberGuard Heroes Say</h2>
+      <div class="testimonials-grid">
+        <blockquote>
+          “Since rolling out CyberGuard, our phishing click-rate dropped by 75% in two weeks.”
+          <cite>— IT Manager, Acme Corp</cite>
+        </blockquote>
+        <blockquote>
+          “The adaptive AI courses were a game-changer for our remote team. Engagement is through the roof!”
+          <cite>— Security Officer, Beta Tech</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Call To Action / Trial Section -->
+    <section id="trial" class="cta-section" aria-labelledby="trial-heading">
+      <h2 id="trial-heading">Ready to Fortify Your Human Firewall?</h2>
+      <a href="#" class="btn primary cta-btn">Start Free Trial</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="social-links" aria-label="Social media links">
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <form class="newsletter-form" aria-label="Newsletter signup">
+        <label for="email">Join our newsletter:</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
-    <div class="hero-content">
-      <h1>CyberGuard Academy: Your AI-Powered Human Firewall</h1>
-      <p class="subhead">Adaptive microlearning that stops phishing in its tracks.</p>
-      <p class="benefit">
-        CyberGuard Academy uses AI-driven nano-courses and real-time nudges to decrease phishing clicks by more than 60%, and it's a seamless add-on for MS 365 and Google Workspace.
-      </p>
-      <a href="#trial" class="btn">Start your free 14-day trial</a>
-    </div>
-  </header>
-
-  <section id="features" class="features benefits">
-    <h2>Show Them the Benefits</h2>
-    <div class="grid">
-      <div class="card">
-        <i class="fas fa-brain"></i>
-        <h3>Adaptive Learning</h3>
-        <p>Conventional nano-courses personalized to individual users' behaviour.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-shield-alt"></i>
-        <h3>Real-Time Nudges</h3>
-        <p>Tips that you can access the moment a risk is detected.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-trophy"></i>
-        <h3>Gamification</h3>
-        <p>Earn XP, badges, and climb leaderboards to stay motivated.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-rocket"></i>
-        <h3>Quick Integration</h3>
-        <p>Most businesses are up and running in 10 minutes or less.</p>
-      </div>
-    </div>
-  </section>
-
- 
-  <section id="testimonials">
-    <h2>What Our CyberGuard Heroes Say</h2>
-    <blockquote>
-      “Since rolling out CyberGuard, our phishing click-rate dropped by 75% in two weeks.”
-      <footer>— IT Manager, Acme Corp</footer>
-    </blockquote>
-    <blockquote>
-      “The adaptive AI courses were a game-changer for our remote team. Engagement is through the roof!”
-      <footer>— Security Officer, Beta Tech</footer>
-    </blockquote>
-  </section>
-
-  <section id="trial" class="cta-section">
-    <h2>Ready to Fortify Your Human Firewall?</h2>
-    <a href="#" class="btn primary">Start your free 14-day trial</a>
-  </section>
-
-  <footer>
     <p>&copy; 2025 CyberGuard Academy | <a href="#">Privacy Policy</a></p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Mobile nav toggle script -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
